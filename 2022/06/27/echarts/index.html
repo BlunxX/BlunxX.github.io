@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
-        <title>Node和node-Sass 版本兼容问题 | BlunX</title>
+        <title>Echarts | BlunX</title>
         <meta name="author" content="BlunX">
         <meta name="description" content="">
         <meta name="keywords" content="">
@@ -120,14 +120,14 @@
                         
 <div class="article">
     <div>
-        <h1>Node和node-Sass 版本兼容问题 </h1>
+        <h1>Echarts </h1>
     </div>
     <div class="info">
         <span class="date">
             <span class="icon">
                 <svg class="fa-icon"><use xlink:href="#calendar-solid"></use></svg>
             </span>
-            2022/6/25
+            2022/6/27
         </span>
         
         <span class="category">
@@ -147,8 +147,15 @@
             
             <span class="tag">
                 
-                <a href="/tags/tools" style="color: #ff7d73">
+                <a href="/tags/tools" style="color: #03a9f4">
                     tools
+                </a>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/echarts" style="color: #03a9f4">
+                    echarts
                 </a>
             </span>
             
@@ -156,11 +163,75 @@
         
     </div>
     <div class="content" v-pre>
-        <h2 id="node和node-sass-版本兼容问题"><a href="#node和node-sass-版本兼容问题" class="headerlink" title="node和node-sass 版本兼容问题"></a>node和node-sass 版本兼容问题</h2><h5 id="这是一个朋友遇到的问题，搞半天都不行，然后来问我。我也是搞了半天才给解决。"><a href="#这是一个朋友遇到的问题，搞半天都不行，然后来问我。我也是搞了半天才给解决。" class="headerlink" title="这是一个朋友遇到的问题，搞半天都不行，然后来问我。我也是搞了半天才给解决。"></a>这是一个朋友遇到的问题，搞半天都不行，然后来问我。我也是搞了半天才给解决。</h5><ul>
-<li>首先删除本地的node所有文件（建议是<a target="_blank" rel="noopener" href="https://geekuninstaller.com/">Geek</a>卸载）</li>
-<li>其次下载<a target="_blank" rel="noopener" href="https://github.com/coreybutler/nvm-windows/releases">nvm</a>中叫nvm-setuo.zip，直接解压后 点击exe程序 进行安装 安装之后。</li>
-<li>打开CMD（一定要管理员权限）输入nvm v 查看是否有版本号。之后输入nvm install 版本号 即可安装  nvm use 版本号  之后进行测试 node -v和 npm -v </li>
-<li>这样就可以选择当前node-sass对应的版本号，同时在遇到其他项目时，还可以切换其他node版本号。</li>
+        <h2 id="echarts使用（长期更新）"><a href="#echarts使用（长期更新）" class="headerlink" title="echarts使用（长期更新）"></a>echarts使用（长期更新）</h2><ul>
+<li>y轴动态计算(设置了最大或小刻度时无效)<pre><code class="javascript">       &#123;
+         type: &quot;value&quot;, 
+         axisLabel: &#123;
+           formatter: &quot;&#123;value&#125; &quot;
+         &#125;,
+         scale:true 
+       &#125;,
+       &#123;
+         type: &quot;value&quot;,
+         name: &quot;离职率&quot;,
+         axisLabel: &#123;
+           formatter: &quot;&#123;value&#125;&quot;
+         &#125;,
+          scale:true
+       &#125;
+     ], 
+</code></pre>
+</li>
+<li>echarts随页面大小自适应<pre><code class="javascript">   window.onresize = function () &#123;
+        myChart.resize();&#125;
+    window.onresize = myChart.resize;
+</code></pre>
+</li>
+<li>鼠标悬停显示数据并且携带%<pre><code class="javascript">formatter:
+  &#39;&#123;b&#125;&lt;br /&gt;\
+ &lt;span style=&quot;display:inline-block;margin-right:5px;border-radius:10px;width:9px;height:9px;background-color:#7ace4c&quot;&gt;&lt;/span&gt;\
+                    &#123;a0&#125;：&#123;c0&#125;&lt;br /&gt;\
+&lt;span style=&quot;display:inline-block;margin-right:5px;border-radius:10px;width:9px;height:9px;background-color:#ffbb44&quot;&gt;&lt;/span&gt;\
+                    &#123;a1&#125;：&#123;c1&#125;%&lt;br /&gt;&#39; 
+</code></pre>
+</li>
+<li>设置折线图或者柱状图的颜色<pre><code class="javascript">itemStyle: &#123;
+              color: &quot;rgba(0, 144, 255, 1)&quot;//柱状图
+            &#125;
+ itemStyle: &#123;
+              color: &quot;rgba(255, 177, 36)&quot;, //折线点的颜色
+              lineStyle: &#123;
+                color: &quot;rgba(255, 177, 36)&quot; //折线的颜色
+              &#125;
+            &#125;
+    smooth: true,//设置为曲线
+</code></pre>
+<ul>
+<li>设置图表占画布大小<pre><code class="javascript">grid: &#123;
+        x2: 45,
+        x: 65 
+      &#125;,
+</code></pre>
+<a target="_blank" rel="noopener" href="https://imgtu.com/i/jgRKK0"><img src="https://s1.ax1x.com/2022/07/12/jgRKK0.png" alt="jgRKK0.png"></a></li>
+</ul>
+</li>
+<li>去除Y轴分割线<pre><code class="javascript">yAxis : [
+     &#123;
+        type : &#39;value&#39;,
+         name:&#39;电量(kWh)&#39;,
+         axisLine:&#123;
+             show:false
+         &#125;,
+         axisTick:&#123;
+             show:false
+         &#125;,
+         splitLine:&#123;
+             show:false
+         &#125;
+     &#125;
+     ]
+</code></pre>
+  splitLine对应2，axisTick对应1.<br> <a target="_blank" rel="noopener" href="https://imgtu.com/i/jgRRMt"><img src="https://s1.ax1x.com/2022/07/12/jgRRMt.md.png" alt="jgRRMt.md.png"></a></li>
 </ul>
 
     </div>
