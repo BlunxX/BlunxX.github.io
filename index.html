@@ -142,6 +142,352 @@
             
 
 <div class="post">
+    <a href="/2022/06/26/vue-keepalive/">
+        <h2>
+            按钮回显功能
+        </h2>
+    </a>
+    <div class="category-and-date">
+        
+        <span class="category">
+            <a href="/categories/技术">
+                <span class="icon">
+                    <svg class="fa-icon"><use xlink:href="#bookmark-solid"></use></svg>
+                技术
+            </a>
+        </span>
+        
+        <span class="date">
+            <span class="icon">
+                <svg class="fa-icon"><use xlink:href="#calendar-solid"></use></svg>
+            </span>
+            2022/6/26
+        </span>
+    </div>
+    <div class="excerpt">
+        <div class="content" v-pre>
+            
+            <h3 id="keep-alive的使用"><a href="#keep-alive的使用" class="headerlink" title="keep-alive的使用"></a>keep-alive的使用</h3><ul>
+<li>在写一个点击按钮进入详情之后还能回到之前选择的按钮的功能，刚好之前看文档的时候记得有一个keep-alive 就尝试了一下。</li>
+<li>使用Keep-alive 来保持页面的状态，再配合beforeRouteLeave 判断页面是否进行保持状态</li>
+<li>在列表页上的其他可跳转页面的按钮，比如 编辑按钮等 加上 钩子函数beforeRouteLeave（回到列表页不缓存列表页面，即刷新）</li>
+<li>目前是这么写的，以后遇到新的方法再来添加。</li>
+</ul>
+
+            
+        </div>
+    </div>
+    <div class="post-tags">
+        
+        <span class="icon">
+            <svg class="fa-icon"><use xlink:href="#tags-solid"></use></svg>
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a href="/tags/tools" style="color: #ffa2c4">
+                tools
+            </a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/VUE" style="color: #ffa2c4">
+                VUE
+            </a>
+        </span>
+        
+    </div>
+    <a href="/2022/06/26/vue-keepalive/" class="go-post">
+        阅读全文
+    </a>
+</div>
+
+<div class="post">
+    <a href="/2022/06/25/node-sass/">
+        <h2>
+            Node和node-Sass 版本兼容问题
+        </h2>
+    </a>
+    <div class="category-and-date">
+        
+        <span class="category">
+            <a href="/categories/工具">
+                <span class="icon">
+                    <svg class="fa-icon"><use xlink:href="#bookmark-solid"></use></svg>
+                工具
+            </a>
+        </span>
+        
+        <span class="date">
+            <span class="icon">
+                <svg class="fa-icon"><use xlink:href="#calendar-solid"></use></svg>
+            </span>
+            2022/6/25
+        </span>
+    </div>
+    <div class="excerpt">
+        <div class="content" v-pre>
+            
+            <h2 id="node和node-sass-版本兼容问题"><a href="#node和node-sass-版本兼容问题" class="headerlink" title="node和node-sass 版本兼容问题"></a>node和node-sass 版本兼容问题</h2><h5 id="这是一个朋友遇到的问题，搞半天都不行，然后来问我。我也是搞了半天才给解决。"><a href="#这是一个朋友遇到的问题，搞半天都不行，然后来问我。我也是搞了半天才给解决。" class="headerlink" title="这是一个朋友遇到的问题，搞半天都不行，然后来问我。我也是搞了半天才给解决。"></a>这是一个朋友遇到的问题，搞半天都不行，然后来问我。我也是搞了半天才给解决。</h5><ul>
+<li>首先删除本地的node所有文件（建议是<a target="_blank" rel="noopener" href="https://geekuninstaller.com/">Geek</a>卸载）</li>
+<li>其次下载<a target="_blank" rel="noopener" href="https://github.com/coreybutler/nvm-windows/releases">nvm</a>中叫nvm-setuo.zip，直接解压后 点击exe程序 进行安装 安装之后。</li>
+<li>打开CMD（一定要管理员权限）输入nvm v 查看是否有版本号。之后输入nvm install 版本号 即可安装  nvm use 版本号  之后进行测试 node -v和 npm -v </li>
+<li>这样就可以选择当前node-sass对应的版本号，同时在遇到其他项目时，还可以切换其他node版本号。</li>
+</ul>
+
+            
+        </div>
+    </div>
+    <div class="post-tags">
+        
+        <span class="icon">
+            <svg class="fa-icon"><use xlink:href="#tags-solid"></use></svg>
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a href="/tags/tools" style="color: #00a596">
+                tools
+            </a>
+        </span>
+        
+    </div>
+    <a href="/2022/06/25/node-sass/" class="go-post">
+        阅读全文
+    </a>
+</div>
+
+<div class="post">
+    <a href="/2022/06/22/cmd-qs/">
+        <h2>
+            运行Cmd出现在此系统上禁止运行脚本
+        </h2>
+    </a>
+    <div class="category-and-date">
+        
+        <span class="category">
+            <a href="/categories/工具">
+                <span class="icon">
+                    <svg class="fa-icon"><use xlink:href="#bookmark-solid"></use></svg>
+                工具
+            </a>
+        </span>
+        
+        <span class="date">
+            <span class="icon">
+                <svg class="fa-icon"><use xlink:href="#calendar-solid"></use></svg>
+            </span>
+            2022/6/22
+        </span>
+    </div>
+    <div class="excerpt">
+        <div class="content" v-pre>
+            
+            <ul>
+<li>不知道修改了啥，再安装插件的时候突然出现禁止在此系统上禁止运行脚本，查了一大堆资料，找到了解决方法。<ul>
+<li><code>set-ExecutionPolicy RemoteSigned</code>以管理员身份打开输入 后面的选项选Y</li>
+</ul>
+</li>
+</ul>
+
+            
+        </div>
+    </div>
+    <div class="post-tags">
+        
+        <span class="icon">
+            <svg class="fa-icon"><use xlink:href="#tags-solid"></use></svg>
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a href="/tags/tools" style="color: #03a9f4">
+                tools
+            </a>
+        </span>
+        
+    </div>
+    <a href="/2022/06/22/cmd-qs/" class="go-post">
+        阅读全文
+    </a>
+</div>
+
+<div class="post">
+    <a href="/2022/06/22/github-use/">
+        <h2>
+            Git的使用
+        </h2>
+    </a>
+    <div class="category-and-date">
+        
+        <span class="category">
+            <a href="/categories/工具">
+                <span class="icon">
+                    <svg class="fa-icon"><use xlink:href="#bookmark-solid"></use></svg>
+                工具
+            </a>
+        </span>
+        
+        <span class="date">
+            <span class="icon">
+                <svg class="fa-icon"><use xlink:href="#calendar-solid"></use></svg>
+            </span>
+            2022/6/22
+        </span>
+    </div>
+    <div class="excerpt">
+        <div class="content" v-pre>
+            
+            <h3 id="从gitlab上面拉取代码以及上传"><a href="#从gitlab上面拉取代码以及上传" class="headerlink" title="从gitlab上面拉取代码以及上传"></a>从gitlab上面拉取代码以及上传</h3><ul>
+<li>公司项目都是部署在gitlab上面，</li>
+<li>gitlab使用起来和github差不多，</li>
+<li>负责的项目就我和另外一个同事写，我两基本就是写完直接推main</li>
+<li>总结下来的操作：</li>
+<li><code>git add . </code> 添加之前全部的修改</li>
+<li><code>git commit -m &#39;xxx&#39;</code> 提交到本地仓库</li>
+<li><code>git pull origin 远端分支</code> 一般我都是直接问有没有改动 有就先拉取</li>
+<li><code>git push origin HEAD:远端分支名</code> 在没有冲突的情况下推送到远程仓库</li>
+<li>其他的一些操作 参考 <a target="_blank" rel="noopener" href="https://www.cnblogs.com/xwkj/p/10266328.html">https://www.cnblogs.com/xwkj/p/10266328.html</a></li>
+<li>今后在遇到其他问题，再作添加。</li>
+</ul>
+
+            
+        </div>
+    </div>
+    <div class="post-tags">
+        
+        <span class="icon">
+            <svg class="fa-icon"><use xlink:href="#tags-solid"></use></svg>
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a href="/tags/tools" style="color: #ff7d73">
+                tools
+            </a>
+        </span>
+        
+    </div>
+    <a href="/2022/06/22/github-use/" class="go-post">
+        阅读全文
+    </a>
+</div>
+
+<div class="post">
+    <a href="/2022/06/21/npm-jingxiang/">
+        <h2>
+            切换NPM镜像
+        </h2>
+    </a>
+    <div class="category-and-date">
+        
+        <span class="category">
+            <a href="/categories/工具">
+                <span class="icon">
+                    <svg class="fa-icon"><use xlink:href="#bookmark-solid"></use></svg>
+                工具
+            </a>
+        </span>
+        
+        <span class="date">
+            <span class="icon">
+                <svg class="fa-icon"><use xlink:href="#calendar-solid"></use></svg>
+            </span>
+            2022/6/21
+        </span>
+    </div>
+    <div class="excerpt">
+        <div class="content" v-pre>
+            
+            <h3 id="切换npm镜像"><a href="#切换npm镜像" class="headerlink" title="切换npm镜像"></a>切换npm镜像</h3><ul>
+<li><code>npm get registry</code> 查看当前镜像</li>
+<li><code>pm config set registry https://registry.npm.taobao.org</code> 切换淘宝镜像</li>
+<li><code>npm config get registry</code> 查看是否切换成功</li>
+<li>遇到新的再添加</li>
+</ul>
+
+            
+        </div>
+    </div>
+    <div class="post-tags">
+        
+        <span class="icon">
+            <svg class="fa-icon"><use xlink:href="#tags-solid"></use></svg>
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a href="/tags/tools" style="color: #ffa2c4">
+                tools
+            </a>
+        </span>
+        
+    </div>
+    <a href="/2022/06/21/npm-jingxiang/" class="go-post">
+        阅读全文
+    </a>
+</div>
+
+<div class="post">
+    <a href="/2022/06/13/chrometools/">
+        <h2>
+            谷歌浏览器插件无法安装问题
+        </h2>
+    </a>
+    <div class="category-and-date">
+        
+        <span class="category">
+            <a href="/categories/工具">
+                <span class="icon">
+                    <svg class="fa-icon"><use xlink:href="#bookmark-solid"></use></svg>
+                工具
+            </a>
+        </span>
+        
+        <span class="date">
+            <span class="icon">
+                <svg class="fa-icon"><use xlink:href="#calendar-solid"></use></svg>
+            </span>
+            2022/6/13
+        </span>
+    </div>
+    <div class="excerpt">
+        <div class="content" v-pre>
+            
+            <h3 id="谷歌插件"><a href="#谷歌插件" class="headerlink" title="谷歌插件"></a>谷歌插件</h3><ul>
+<li>无法安装谷歌插件的解决方法:在chrome的快捷方式中的目标那里最后面添加<code>--enable-easy-off-store-extension-install</code></li>
+</ul>
+
+            
+        </div>
+    </div>
+    <div class="post-tags">
+        
+        <span class="icon">
+            <svg class="fa-icon"><use xlink:href="#tags-solid"></use></svg>
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a href="/tags/tools" style="color: #00bcd4">
+                tools
+            </a>
+        </span>
+        
+    </div>
+    <a href="/2022/06/13/chrometools/" class="go-post">
+        阅读全文
+    </a>
+</div>
+
+<div class="post">
     <a href="/2022/06/12/Hexo-blog搭建/">
         <h2>
             Hexo-Blog搭建
@@ -169,7 +515,7 @@
             
             <ul>
 <li>搭建这个blog，使用了Hexo这个开箱即用的博客框架，配合GithubPages,算是一种白嫖的方式。<ul>
-<li>为了加快访问速度，网站同样也托管在了vercel平台上面，图片基本使用了白嫖的图床。</li>
+<li>为了加快访问速度，网站同样也托管在了vercel平台上面，图片基本使用了白嫖的图床(<a target="_blank" rel="noopener" href="https://imgtu.com/)%E3%80%82">https://imgtu.com/)。</a></li>
 <li>整个框架使用起来还蛮容易上手，也参考了网上很多的教程。有一些常用的命令：<ul>
 <li>生成静态文件：hexo g</li>
 <li>清除静态文件：hexo cl</li>
@@ -195,7 +541,7 @@
         
         <span class="tag">
             
-            <a href="/tags/hexo" style="color: #ff7d73">
+            <a href="/tags/hexo" style="color: #00a596">
                 hexo
             </a>
         </span>
@@ -251,7 +597,7 @@
         
         <span class="tag">
             
-            <a href="/tags/hexo" style="color: #03a9f4">
+            <a href="/tags/hexo" style="color: #00bcd4">
                 hexo
             </a>
         </span>

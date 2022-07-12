@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
-        <title>Categories: 技术 | BlunX</title>
+        <title>切换NPM镜像 | BlunX</title>
         <meta name="author" content="BlunX">
         <meta name="description" content="">
         <meta name="keywords" content="">
@@ -117,34 +117,21 @@
 </nav>
                     </div>
                     <div id="main">
-                         
-<div class="categories-tags">
-    
-    <div class="all-s">
-        
-        
-        <span>
-            <a href="/categories/技术/" style="background: linear-gradient(120deg, #9abbf7 0%, #ffbbf4 100%)">
-                <span class="icon">
-                    <svg class="fa-icon"><use xlink:href="#bookmark-solid"></use></svg>
-                </span>
-                技术
-            </a>
+                        
+<div class="article">
+    <div>
+        <h1>切换NPM镜像 </h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <svg class="fa-icon"><use xlink:href="#calendar-solid"></use></svg>
+            </span>
+            2022/6/21
         </span>
         
-        
-        <span>
-            <a href="/categories/杂谈/" style="background: #00a596">
-                <span class="icon">
-                    <svg class="fa-icon"><use xlink:href="#bookmark-solid"></use></svg>
-                </span>
-                杂谈
-            </a>
-        </span>
-        
-        
-        <span>
-            <a href="/categories/工具/" style="background: #ff7d73">
+        <span class="category">
+            <a href="/categories/工具">
                 <span class="icon">
                     <svg class="fa-icon"><use xlink:href="#bookmark-solid"></use></svg>
                 </span>
@@ -152,91 +139,32 @@
             </a>
         </span>
         
-    </div>
-    <div id="archives">
         
-        <div class="timeline">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2022/6/12</div>
-                <a href="/2022/06/12/Hexo-blog搭建/">
-                    <h3>Hexo-blog搭建</h3>
+        <span class="tags">
+            <span class="icon">
+                <svg class="fa-icon"><use xlink:href="#tags-solid"></use></svg>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/tools" style="color: #ff7d73">
+                    tools
                 </a>
-                <div class="info">
-                    
-                    <span class="category">
-                        <a href="/categories/技术">
-                            <span class="icon">
-                                <svg class="fa-icon"><use xlink:href="#bookmark-solid"></use></svg>
-                            </span>
-                            技术
-                        </a>
-                    </span>
-                    
-                    
-                    <span class="tags">
-                        <span class="icon">
-                            <svg class="fa-icon"><use xlink:href="#tags-solid"></use></svg>
-                        </span>
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/hexo" style="color: #00a596">
-                                hexo
-                            </a>
-                        </span>
-                        
-                    </span>
-                    
-                </div>
-            </div>
-        </div>
-        
-        <div class="timeline">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2022/6/26</div>
-                <a href="/2022/06/26/vue-keepalive/">
-                    <h3>按钮回显功能</h3>
-                </a>
-                <div class="info">
-                    
-                    <span class="category">
-                        <a href="/categories/技术">
-                            <span class="icon">
-                                <svg class="fa-icon"><use xlink:href="#bookmark-solid"></use></svg>
-                            </span>
-                            技术
-                        </a>
-                    </span>
-                    
-                    
-                    <span class="tags">
-                        <span class="icon">
-                            <svg class="fa-icon"><use xlink:href="#tags-solid"></use></svg>
-                        </span>
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/tools" style="color: #03a9f4">
-                                tools
-                            </a>
-                        </span>
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/VUE" style="color: #03a9f4">
-                                VUE
-                            </a>
-                        </span>
-                        
-                    </span>
-                    
-                </div>
-            </div>
-        </div>
+            </span>
+            
+        </span>
         
     </div>
+    <div class="content" v-pre>
+        <h3 id="切换npm镜像"><a href="#切换npm镜像" class="headerlink" title="切换npm镜像"></a>切换npm镜像</h3><ul>
+<li><code>npm get registry</code> 查看当前镜像</li>
+<li><code>pm config set registry https://registry.npm.taobao.org</code> 切换淘宝镜像</li>
+<li><code>npm config get registry</code> 查看是否切换成功</li>
+<li>遇到新的再添加</li>
+</ul>
+
+    </div>
+    
 </div>
                          
 <footer id="footer">
