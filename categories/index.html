@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
-        <title>按钮回显功能 | BlunX</title>
+        <title>Categories | BlunX</title>
         <meta name="author" content="BlunX">
         <meta name="description" content="">
         <meta name="keywords" content="">
@@ -117,21 +117,14 @@
 </nav>
                     </div>
                     <div id="main">
-                        
-<div class="article">
-    <div>
-        <h1>按钮回显功能 </h1>
-    </div>
-    <div class="info">
-        <span class="date">
-            <span class="icon">
-                <svg class="fa-icon"><use xlink:href="#calendar-solid"></use></svg>
-            </span>
-            2022/6/26
-        </span>
+                         
+<div class="categories-tags">
+    
+    <div class="all-s">
         
-        <span class="category">
-            <a href="/categories/技术">
+        
+        <span>
+            <a href="/categories/技术/" style="background: #03a9f4">
                 <span class="icon">
                     <svg class="fa-icon"><use xlink:href="#bookmark-solid"></use></svg>
                 </span>
@@ -140,38 +133,29 @@
         </span>
         
         
-        <span class="tags">
-            <span class="icon">
-                <svg class="fa-icon"><use xlink:href="#tags-solid"></use></svg>
-            </span>
-            
-            <span class="tag">
-                
-                <a href="/tags/tools" style="color: #00bcd4">
-                    tools
-                </a>
-            </span>
-            
-            <span class="tag">
-                
-                <a href="/tags/VUE" style="color: #00a596">
-                    VUE
-                </a>
-            </span>
-            
+        <span>
+            <a href="/categories/杂谈/" style="background: #03a9f4">
+                <span class="icon">
+                    <svg class="fa-icon"><use xlink:href="#bookmark-solid"></use></svg>
+                </span>
+                杂谈
+            </a>
+        </span>
+        
+        
+        <span>
+            <a href="/categories/工具/" style="background: #03a9f4">
+                <span class="icon">
+                    <svg class="fa-icon"><use xlink:href="#bookmark-solid"></use></svg>
+                </span>
+                工具
+            </a>
         </span>
         
     </div>
-    <div class="content" v-pre>
-        <h3 id="keep-alive的使用"><a href="#keep-alive的使用" class="headerlink" title="keep-alive的使用"></a>keep-alive的使用</h3><ul>
-<li>在写一个点击按钮进入详情之后还能回到之前选择的按钮的功能，刚好之前看文档的时候记得有一个keep-alive 就尝试了一下。</li>
-<li>使用Keep-alive 来保持页面的状态，再配合beforeRouteLeave 判断页面是否进行保持状态</li>
-<li>在列表页上的其他可跳转页面的按钮，比如 编辑按钮等 加上 钩子函数beforeRouteLeave（回到列表页不缓存列表页面，即刷新）</li>
-<li>目前是这么写的，以后遇到新的方法再来添加。</li>
-</ul>
-
+    <div id="archives">
+        
     </div>
-    
 </div>
                          
 <footer id="footer">
