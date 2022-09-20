@@ -161,7 +161,7 @@
             
             <span class="tag">
                 
-                <a href="/tags/tools" style="color: #ffa2c4">
+                <a href="/tags/tools" style="color: #00a596">
                     tools
                 </a>
             </span>
@@ -181,9 +181,8 @@
 <p>国内xdoc同样可以使用这个功能，但是是需要收费的。</p>
 <p>第二个方案：一个开源的在线查看项目: <a target="_blank" rel="noopener" href="https://kkfileview.keking.cn/zh-cn/docs/home.html">kkfileview</a><br>只需要在安装部署服务之后即可使用，安装成功之后打开 <a target="_blank" rel="noopener" href="http://127.0.0.1:8012/">http://127.0.0.1:8012</a> 能查看demo就算安装成功。<br>该功能不需要集成在项目里面，额外部署在一台服务器或者本地电脑就可以使用。使用的时候在所需要的页面：</p>
 <pre><code class="JavaScript">  &lt;script type=&quot;text/javascript&quot; src=&quot;https://cdn.jsdelivr.net/npm/js-base64@3.6.0/base64.min.js&quot;&gt;&lt;/script&gt;
-
-var url = &#39;http://127.0.0.1:8080/file/test.txt&#39;; //要预览文件的访问地址
-window.open(&#39;http://127.0.0.1:8012/onlinePreview?url=&#39;+encodeURIComponent(Base64.encode(url)));
+  var url = &#39;http://127.0.0.1:8080/file/test.txt&#39;; //要预览文件的访问地址
+  window.open(&#39;http://127.0.0.1:8012/onlinePreview?url=&#39;+encodeURIComponent(Base64.encode(url)));
 </code></pre>
 
     </div>
