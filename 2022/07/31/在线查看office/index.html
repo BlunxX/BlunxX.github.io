@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
-    <title>Categories: 杂谈 | BlunX</title>
+    <title>在线查看Office | BlunX</title>
     <meta name="author" content="BlunX">
     <meta name="description" content="">
     <meta name="keywords" content="">
@@ -131,34 +131,21 @@
 </nav>
                 </div>
                 <div id="main">
-                     
-<div class="categories-tags">
-    
-    <div class="all-s">
-        
-        
-        <span>
-            <a href="/categories/技术/" style="background: #ff7d73">
-                <span class="icon">
-                    <svg class="fa-icon"><use xlink:href="#bookmark-solid"></use></svg>
-                </span>
-                技术
-            </a>
+                    
+<div class="article">
+    <div>
+        <h1>在线查看Office </h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <svg class="fa-icon"><use xlink:href="#calendar-solid"></use></svg>
+            </span>
+            2022/7/31
         </span>
         
-        
-        <span>
-            <a href="/categories/杂谈/" style="background: linear-gradient(120deg, #9abbf7 0%, #ffbbf4 100%)">
-                <span class="icon">
-                    <svg class="fa-icon"><use xlink:href="#bookmark-solid"></use></svg>
-                </span>
-                杂谈
-            </a>
-        </span>
-        
-        
-        <span>
-            <a href="/categories/工具/" style="background: #ff7d73">
+        <span class="category">
+            <a href="/categories/工具">
                 <span class="icon">
                     <svg class="fa-icon"><use xlink:href="#bookmark-solid"></use></svg>
                 </span>
@@ -166,47 +153,41 @@
             </a>
         </span>
         
-    </div>
-    <div id="archives">
         
-        <div class="timeline">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2022/6/8</div>
-                <a href="/2022/06/08/World/">
-                    <h3>Hello World</h3>
+        <span class="tags">
+            <span class="icon">
+                <svg class="fa-icon"><use xlink:href="#tags-solid"></use></svg>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/tools" style="color: #ffa2c4">
+                    tools
                 </a>
-                <div class="info">
-                    
-                    <span class="category">
-                        <a href="/categories/杂谈">
-                            <span class="icon">
-                                <svg class="fa-icon"><use xlink:href="#bookmark-solid"></use></svg>
-                            </span>
-                            杂谈
-                        </a>
-                    </span>
-                    
-                    
-                    <span class="tags">
-                        <span class="icon">
-                            <svg class="fa-icon"><use xlink:href="#tags-solid"></use></svg>
-                        </span>
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/hexo" style="color: #00a596">
-                                hexo
-                            </a>
-                        </span>
-                        
-                    </span>
-                    
-                </div>
-            </div>
-        </div>
+            </span>
+            
+        </span>
         
     </div>
+    <div class="content" v-pre>
+        <p>​在遇到有在线查看office的需求：</p>
+<span id="more"></span>
+
+<p>第一时间想到了微软的在线office功能。</p>
+<pre><code class="html">https://view.officeapps.live.com/op/view.aspx?src=xxx.xlsx
+</code></pre>
+<p>在src后面拼接上自己索要查看的文档的链接即可。</p>
+<p>但是有几个需要注意的：1.拼接地址必须是外部可以访问的 2.地址必须是域名，ip地址无法使用。</p>
+<p>国内xdoc同样可以使用这个功能，但是是需要收费的。</p>
+<p>第二个方案：一个开源的在线查看项目: <a target="_blank" rel="noopener" href="https://kkfileview.keking.cn/zh-cn/docs/home.html">kkfileview</a><br>只需要在安装部署服务之后即可使用，安装成功之后打开 <a target="_blank" rel="noopener" href="http://127.0.0.1:8012/">http://127.0.0.1:8012</a> 能查看demo就算安装成功。<br>该功能不需要集成在项目里面，额外部署在一台服务器或者本地电脑就可以使用。使用的时候在所需要的页面：</p>
+<pre><code class="JavaScript">  &lt;script type=&quot;text/javascript&quot; src=&quot;https://cdn.jsdelivr.net/npm/js-base64@3.6.0/base64.min.js&quot;&gt;&lt;/script&gt;
+
+var url = &#39;http://127.0.0.1:8080/file/test.txt&#39;; //要预览文件的访问地址
+window.open(&#39;http://127.0.0.1:8012/onlinePreview?url=&#39;+encodeURIComponent(Base64.encode(url)));
+</code></pre>
+
+    </div>
+    
 </div>
                      
 <footer id="footer">
